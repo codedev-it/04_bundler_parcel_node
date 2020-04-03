@@ -1,0 +1,33 @@
+{
+  "name": "04_bundler_parcel_node",
+  "version": "1.0.0",
+  "description": "Budler with parcel deploy in heroku",
+  "main": "main.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "start": "node server.js",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "parcel",
+    "bundler",
+    "nodejs"
+  ],
+  "author": "Codedev.it",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "autoprefixer": "^9.7.5",
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^1.5.0",
+    "sass": "^1.26.3"
+  }
+}
